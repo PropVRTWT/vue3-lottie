@@ -7,38 +7,38 @@ importers:
 
   packages/playground/vite-project:
     specifiers:
-      '@vitejs/plugin-vue': ^2.2.0
-      typescript: ^4.5.5
-      vite: ^2.8.4
-      vue: ^3.2.31
-      vue-tsc: ^0.31.4
-      vue3-lottie: ^2.0.2
+      '@vitejs/plugin-vue': 2.2.2
+      typescript: 4.5.5
+      vite: 2.8.4
+      vue: 3.2.31
+      vue-tsc: 0.31.4
+      vue3-lottie: 2.0.2
     dependencies:
       vue: 3.2.31
-      vue3-lottie: link:../../vue3-lottie
+      vue3-lottie: 2.0.2_vue@3.2.31
     devDependencies:
-      '@vitejs/plugin-vue': 2.2.0_vite@2.8.4+vue@3.2.31
+      '@vitejs/plugin-vue': 2.2.2_vite@2.8.4+vue@3.2.31
       typescript: 4.5.5
       vite: 2.8.4
       vue-tsc: 0.31.4_typescript@4.5.5
 
   packages/vue3-lottie:
     specifiers:
-      '@babel/types': ^7.17.0
-      '@types/node': ^17.0.18
-      '@vitejs/plugin-vue': ^2.2.0
+      '@babel/types': 7.17.0
+      '@types/node': 17.0.19
+      '@vitejs/plugin-vue': 2.2.2
       lottie-web: ^5.8.1
-      typescript: ^4.5.5
-      vite: ^2.8.4
-      vue: ^3.2.31
-      vue-tsc: ^0.31.4
-      vue-typegen: ^0.2.0
+      typescript: 4.5.5
+      vite: 2.8.4
+      vue: 3.2.31
+      vue-tsc: 0.31.4
+      vue-typegen: 0.2.0
     dependencies:
       lottie-web: 5.8.1
     devDependencies:
       '@babel/types': 7.17.0
-      '@types/node': 17.0.18
-      '@vitejs/plugin-vue': 2.2.0_vite@2.8.4+vue@3.2.31
+      '@types/node': 17.0.19
+      '@vitejs/plugin-vue': 2.2.2_vite@2.8.4+vue@3.2.31
       typescript: 4.5.5
       vite: 2.8.4
       vue: 3.2.31
@@ -50,12 +50,13 @@ packages:
   /@babel/helper-validator-identifier/7.16.7:
     resolution: {integrity: sha512-hsEnFemeiW4D08A5gUAZxLBTXpZ39P+a+DGDsHw1yxqyQ/jzFEnxf5uTEGp+3bzAbNOxU1paTgYS4ECU/IgfDw==}
     engines: {node: '>=6.9.0'}
-    dev: true
 
   /@babel/parser/7.17.3:
     resolution: {integrity: sha512-7yJPvPV+ESz2IUTPbOL+YkIGyCqOyNIzdguKQuJGnH7bg1WTIifuM21YqokFt/THWh1AkCRn9IgoykTRCBVpzA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.17.0
 
   /@babel/types/7.17.0:
     resolution: {integrity: sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw==}
@@ -63,7 +64,6 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.16.7
       to-fast-properties: 2.0.0
-    dev: true
 
   /@emmetio/abbreviation/2.2.3:
     resolution: {integrity: sha512-87pltuCPt99aL+y9xS6GPZ+Wmmyhll2WXH73gG/xpGcQ84DRnptBsI2r0BeIQ0EB/SQTOe2ANPqFqj3Rj5FOGA==}
@@ -102,12 +102,12 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@types/node/17.0.18:
-    resolution: {integrity: sha512-eKj4f/BsN/qcculZiRSujogjvp5O/k4lOW5m35NopjZM/QwLOR075a8pJW5hD+Rtdm2DaCVPENS6KtSQnUD6BA==}
+  /@types/node/17.0.19:
+    resolution: {integrity: sha512-PfeQhvcMR4cPFVuYfBN4ifG7p9c+Dlh3yUZR6k+5yQK7wX3gDgVxBly4/WkBRs9x4dmcy1TVl08SY67wwtEvmA==}
     dev: true
 
-  /@vitejs/plugin-vue/2.2.0_vite@2.8.4+vue@3.2.31:
-    resolution: {integrity: sha512-wXigM1EwN2G7rZcwG6kLk9ivvIMhx2363tCEvMBiXcTu5nePM/12hUPVzPb83Uugt6U+zom1gTpJopi/Ow/jwg==}
+  /@vitejs/plugin-vue/2.2.2_vite@2.8.4+vue@3.2.31:
+    resolution: {integrity: sha512-3C0s45VOwIFEDU+2ownJOpb0zD5fnjXWaHVOLID2R1mYOlAx3doNBFnNbVjaZvpke/L7IdPJXjpyYpXZToDKig==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
@@ -126,6 +126,7 @@ packages:
 
   /@volar/html2pug/0.31.4:
     resolution: {integrity: sha512-+whoP4C34kbCIRyoojZE6luqs7Ep/0YDBD9yEWu82G1ECLIFoujtkZXHbAHiQH8MIs/GwjUmozd85pUGAVQf1w==}
+    deprecated: 'WARNING: This project has been renamed to @johnsoncodehk/html2pug. Install using @johnsoncodehk/html2pug instead.'
     dependencies:
       domelementtype: 2.2.0
       domhandler: 4.3.0
@@ -943,7 +944,6 @@ packages:
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
     engines: {node: '>=4'}
-    dev: true
 
   /to-regex-range/5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -1059,6 +1059,7 @@ packages:
 
   /vscode-pug-languageservice/0.31.4:
     resolution: {integrity: sha512-StQWV+v1v+an/pGKNPg4YkODFyKeYpUEzaSAoXIUsIoh7O4Nuv6zjd1M/fPxaMSD6Kk+OH/JGE36hbXsKXOz5A==}
+    deprecated: 'WARNING: This project has been renamed to @volar/pug-language-service. Install using @volar/pug-language-service instead.'
     dependencies:
       '@volar/code-gen': 0.31.4
       '@volar/shared': 0.31.4
@@ -1072,6 +1073,7 @@ packages:
 
   /vscode-typescript-languageservice/0.31.4:
     resolution: {integrity: sha512-nsnRPEfg9t3oDlwzm3WTAv0p83vceqCuxvRo/+N7hXbmtaO7WMGCMvJx0xyIuUDS4NgaEK31oMR9FnX9JNcEQQ==}
+    deprecated: 'WARNING: This project has been renamed to @volar/typescript-language-service. Install using @volar/typescript-language-service instead.'
     dependencies:
       '@volar/shared': 0.31.4
       semver: 7.3.5
@@ -1091,6 +1093,7 @@ packages:
 
   /vscode-vue-languageservice/0.31.4:
     resolution: {integrity: sha512-Pyvtj5iokBilGDH8KY6bocJh8NcIGoFmUksPOOZKBb+4usEHTBtWw/uoH4hjxWwLszMRQuStkXLMaSKtBIv3gQ==}
+    deprecated: 'WARNING: This project has been renamed to @volar/vue-language-service. Install using @volar/vue-language-service instead.'
     dependencies:
       '@volar/code-gen': 0.31.4
       '@volar/html2pug': 0.31.4
@@ -1144,6 +1147,16 @@ packages:
       '@vue/runtime-dom': 3.2.31
       '@vue/server-renderer': 3.2.31_vue@3.2.31
       '@vue/shared': 3.2.31
+
+  /vue3-lottie/2.0.2_vue@3.2.31:
+    resolution: {integrity: sha512-+dOZWEOPVV6dryYq41+eegNzFU5WUsh2giNr1Xi6DMSQD0nFMvPv6LQZlQcVUw+/dAxunkTIF/GfZUEa5ptWeA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      vue: ^3.2
+    dependencies:
+      lottie-web: 5.8.1
+      vue: 3.2.31
+    dev: false
 
   /with/7.0.2:
     resolution: {integrity: sha512-RNGKj82nUPg3g5ygxkQl0R937xLyho1J24ItRCBTr/m1YnZkzJy1hUiHUJrc/VlsDQzsCnInEGSg3bci0Lmd4w==}
